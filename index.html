@@ -3,8 +3,30 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Css Color Slider</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
+	<div class="container">
+		<div class="left">
+			<div class="controls">
+				<label for="spacing"> Spacing: </label>
+				<input type="range" name="spacing" id="spacing" min="10" max="200" value="20" data-sizing="px">
+
+				<label for="blur"> Blur: </label>
+				<input type="range" name="blur" id="blur" min="0" max="25" value="10" data-sizing="px">
+
+				<label for="base">Base Color:</label>
+				<input type="color" name="base" id="base" value="#CC33CC">
+				
+			</div>
+		</div>
+		<div class="right">
+			<img src="image.jpg" class="img-rounded">
+			
+		</div>
+	</div>
 	
+
+	<script src="script.js"></script>
 </body>
 </html>
